@@ -1,0 +1,18 @@
+cd "$(dirname "$0")"
+
+currentDay=$(date +"%u")
+currentTime=$(date +"%H:%M")
+
+isOfficeHours=false
+
+if [[ "$currentDay" > 0 ]] && [[ "$currentDay" < 6 ]]; then
+	if [[ "$currentTime" > "09:29" ]] && [[ "$currentTime" < "18:31" ]]; then
+		isOfficeHours=true
+	fi
+fi
+
+if [[ "$isOfficeHours" = true ]] then
+	echo 1
+else
+	echo 0
+fi
