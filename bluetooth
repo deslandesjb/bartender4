@@ -1,4 +1,4 @@
-DEVICES=("4c-b9-9b-26-f2-21" "38-88-a4-cc-bb-b1")
+DEVICES=("xx-xx-xx-xx-xx-xx" "XX-XX-XX-XX-XX-XX")
 
 IS_CONNECTED=0
 for DEVICE in "${DEVICES[@]}"
